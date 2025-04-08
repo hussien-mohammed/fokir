@@ -212,15 +212,14 @@ h1{
     margin-left: 5px;
 }  
 .services {
-    margin-top: 3%; /* تقليل المسافة العلوية */
-    padding: 80px 0 250px; /* تقليل الفراغ العلوي والسفلي */
+    margin-top: 3%; 
+    padding: 80px 0 250px; 
     background-color: #F1F1F1;
 }
 
 .ourcont {
     text-align: center;
     position: relative;
-    /* إزالة top و padding المكرر */
 }
 
 .ourcont h2 {
@@ -228,7 +227,6 @@ h1{
     position: relative;
 }
 
-/* الخط السفلي */
 .ourcont h2::after {
     content: '';
     position: absolute;
@@ -245,9 +243,6 @@ h1{
     background-color: #EC2403;
     position: absolute;
     left: 35%;}
-
-
-/* الخط السفلي الثاني */
 .ourcont h2::before {
     content: '';
     position: absolute;
@@ -258,8 +253,6 @@ h1{
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* تصميم الكارد */
 .card {
     width: 20%;
     height: 200px;
@@ -307,13 +300,12 @@ h1{
     left: 35%;
 }  */
 .protflio {
-    margin-top: 3%; /* تقليل المسافة العلوية */
-    padding: 80px 0 250px; /* تقليل الفراغ العلوي والسفلي */
+    margin-top: 3%; 
+    padding: 80px 0 250px; 
 }
 .ourprotfolio {
     text-align: center;
     position: relative;
-    /* إزالة top و padding المكرر */
 }
 .ourprotfolio h2::after {
     content: '';
