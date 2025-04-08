@@ -1,0 +1,378 @@
+body{
+    margin: 0;
+}
+.clearfix{
+    clear: both;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+h1{
+    color: #FF305B;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.navbar a{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar li{
+    float: right;
+}
+.background{
+    background-image: url(./images/hero\ img.jpg);
+    background-size:cover ;
+    background-position:center center;
+    height: 110vh;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 6%;
+}
+.header{
+    margin-top: 15%;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.header h1{
+    font-size: 76px;
+    margin: 20px 0;
+    position: relative;
+}
+.header span {
+    font-size:26px;
+    padding-top: 90px;
+}
+.header p{
+    font-size: 26px;
+}
+.navbar span {
+    font-size: 24px;
+    color: #ff305b;
+    width: 10%;
+    margin: auto;
+    float: left;
+    padding-top:90px ;
+    margin-top: 15px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.background::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(00, 00, 00, .8);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.section2{
+    padding: 100px 0 125px;
+}
+.about {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    position: relative;
+}
+.aboutbox {
+    box-shadow: 0 0 0 8px #555 inset;
+    border-radius: 5px;
+}
+.aboutphoto {
+    position: relative;
+    transform: translate(24px, 24px);
+    /* background-color: #45a049; */
+}
+.aboutphoto img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.aboutoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    border-radius: 9px;
+}
+.aboutphoto:hover .aboutoverlay{
+    height: 100%;
+    opacity: 1;
+    visibility: visible
+}
+.abouticon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.abouticon ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.abouticon li{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.abouticon li a{
+    color: white;
+    font-size: 20px;
+}
+.abouticon li a:hover{
+    color: #ff305b;
+}
+.text {
+    width: 50%;
+    float: right;
+    padding: 0 2%;
+}
+.text h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 13px;
+}
+.text h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #ff305b;
+}
+.text p {
+    border-bottom: 1px dashed #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.profile-about ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.profile-about ul li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+.profile-about span {
+    color: #333;
+    font-weight: bold;
+}
+.download-cv-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #EC2403;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.download-cv-btn button:hover {
+    background-color: #D62E00;
+}
+.hire-me {
+    background-color: #4CAF50;}
+
+.hire-me:hover {
+    background-color: #45a049;
+}
+.download-cv-btn i {
+    margin-left: 5px;
+}  
+.services {
+    margin-top: 3%; /* تقليل المسافة العلوية */
+    padding: 80px 0 250px; /* تقليل الفراغ العلوي والسفلي */
+    background-color: #F1F1F1;
+}
+
+.ourcont {
+    text-align: center;
+    position: relative;
+    /* إزالة top و padding المكرر */
+}
+
+.ourcont h2 {
+    font-size: 40px;
+    position: relative;
+}
+
+/* الخط السفلي */
+.ourcont h2::after {
+    content: '';
+    position: absolute;
+    background-color: red;
+    bottom: -7px;
+    height: 1px;
+    width: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.line1{
+    height: 1px;
+    width:30%;
+    background-color: #EC2403;
+    position: absolute;
+    left: 35%;}
+
+
+/* الخط السفلي الثاني */
+.ourcont h2::before {
+    content: '';
+    position: absolute;
+    background-color: #EC2403;
+    bottom: -45px;
+    height: 1px;
+    width: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* تصميم الكارد */
+.card {
+    width: 20%;
+    height: 200px;
+    float: left;
+    background-color:transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin: 2%;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #777;
+}
+.card:hover{
+    transform: translateY(-10px);
+    background-color: white;
+}
+
+/* .line2{
+    height: 3px;
+    width:20%;
+    background-color: #EC2403;
+    position: absolute;
+    bottom:4%;
+    left: 35%;
+}
+.line3{
+    height: 3px;
+    width:25%;
+    background-color: #EC2403;
+    position: absolute;
+    left: 35%;
+}  */
+.protflio {
+    margin-top: 3%; /* تقليل المسافة العلوية */
+    padding: 80px 0 250px; /* تقليل الفراغ العلوي والسفلي */
+}
+.ourprotfolio {
+    text-align: center;
+    position: relative;
+    /* إزالة top و padding المكرر */
+}
+.ourprotfolio h2::after {
+    content: '';
+    position: absolute;
+    background-color: red;
+    bottom: -7px;
+    height: 1px;
+    width: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ourprotfolio h2::before {
+    content: '';
+    position: absolute;
+    background-color: #EC2403;
+    bottom: -45px;
+    height: 1px;
+    width: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.protflio ul{
+    list-style-type: none;
+    background-color: transparent;
+    padding-bottom: 0;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+}
+.protflio a{
+    color:black;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.protflio li{
+    float: left;
+}
+.protflio .ulpr{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 30px 0;
+    position: static; 
+}
+.protflio li a:hover{
+    color: #ff305b;
+}
+.protflio .card2 img{
+    width: 100%;
+}
+.mar0{
+    margin-top: 1%;
+}
+.protflio .card2{
+    width:30%;
+    float: left;
+}
+
